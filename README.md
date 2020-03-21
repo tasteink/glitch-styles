@@ -1,17 +1,16 @@
 <p align="center">
   <img src="https://tasteink.github.io/assets/assets/images/logo.svg" alt="Taste Ink Logo" />
+  <h1 align="center">@tasteink/glitch-styles</h1>
+  <h2 align="center">Easily add subtle glitch effects to your app.</h2>
 </p>
 
-<h1 align="center">@tasteink/glitch-styles</h1>
+---
 
-<h2 align="center">Easily add subtle glitch effects to your app.</h2>
 <p align="center">
-  <a href="https://07jue.csb.app/" target="_blank">demo</a>
-   -
-  <a href="https://npmjs.com/package/@tasteink/glitch-styles" target="_blank">npm package</a>
-  -
-  <a href="https://www.pinterest.com/search/pins/?q=glitch%20text&rs=typed&term_meta[]=glitch%7Ctyped&term_meta[]=text%7Ctyped" target="_blank">glitch design</a>
+  <a href="https://07jue.csb.app/" target="_blank">demo</a> | <a href="https://npmjs.com/package/@tasteink/glitch-styles" target="_blank">npm package</a> | <a href="https://www.pinterest.com/search/pins/?q=glitch%20text&rs=typed&term_meta[]=glitch%7Ctyped&term_meta[]=text%7Ctyped" target="_blank">glitch design</a>
 </p>
+
+---
 
 # NOTE: Not ready for usage yet. Hang tight.
 
