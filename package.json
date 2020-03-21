@@ -1,0 +1,94 @@
+{
+  "name": "@tasteink/glitch-styles",
+  "version": "0.0.0-development",
+  "private": false,
+  "description": "Easily add glitch effects to your app.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tasteink/glitch-styles"
+  },
+  "license": "MIT",
+  "author": "Colton Colcleasure <colshacol@gmail.com>",
+  "files": [
+    "dist/",
+    "lib/",
+    "LICENSE",
+    "README.md"
+  ],
+  "main": "dist/",
+  "scripts": {
+    "build": "babel lib/ -d dist/ --source-maps --ignore '**/*.test.js' --delete-dir-on-start",
+    "format": "prettier --write '**/*.*' && eslint . --fix",
+    "lint": "prettier --check '**/*.*' && eslint .",
+    "prepublishOnly": "yarn build",
+    "semantic-release": "semantic-release",
+    "test": "jest --coverage && yarn lint"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "12"
+          }
+        }
+      ]
+    ]
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "trailingComma": "all"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "jest": true,
+      "node": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 2019,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "jest"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:jest/recommended"
+    ]
+  },
+  "jest": {
+    "automock": true
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "5.1.1",
+    "@testing-library/react": "10.0.1",
+    "css": "2.2.4",
+    "jsdom": "16.2.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.9.0",
+    "@babel/preset-env": "7.9.0",
+    "@types/jest": "25.1.4",
+    "babel-eslint": "10.1.0",
+    "babel-jest": "25.1.0",
+    "eslint": "6.8.0",
+    "eslint-plugin-jest": "23.8.2",
+    "jest": "25.1.0",
+    "jest-date-mock": "1.0.8",
+    "prettier": "1.19.1",
+    "prettier-plugin-packagejson": "2.0.10",
+    "semantic-release": "17.0.4",
+    "semantic-release-cli": "5.2.3"
+  },
+  "renovate": {
+    "extends": [
+      "config:js-lib"
+    ]
+  }
+}
